@@ -1,0 +1,20 @@
+<form class="needs-validation m-5" [formGroup]="employeeFormGroup" (ngSubmit)="submitEmployeeData()">
+    <div class="form-row">
+        <div class="col mb-3">
+            <label for="formGroupExampleInput">First Name</label>
+            <input type="text" class="form-control" placeholder="First name" formControlName="name">
+        </div>
+        <div class="col mb-3">
+            <label for="formGroupExampleInput">Department</label>
+            <input type="text" class="form-control" placeholder="Last name" formControlName="department">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col mb-3">
+            <label for="formGroupExampleInput">Age</label>
+            <input type="text" class="form-control" placeholder="First name" formControlName="age">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="button" class="btn btn-danger" (click)="cancelForm()">Cancel</button>
+</form>
